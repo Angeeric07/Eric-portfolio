@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+body{
+    background-color: #5B7BDB;
+    font-family: 'Poppins', sans-serif;
+}
+.me{
+    color: white;
+}
+.btn-her{
+    background-color: #E6FA53; 
+    color: #000000;            
+    padding: 10px 24px;        
+    border-radius: 50px;       
+    font-weight: 700;          
+    text-decoration: none;     /* Enlève le soulignement du lien */
+    font-size: 14px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    text-decoration: none; 
+    color: white;          
+}
+.service {
+    display: flex;
+    gap: 30px; 
+}
+.service a {
+    text-transform: uppercase;
+}
+main {
+    display: flex;                  /* Aligne les 3 grandes div côte à côte */
+    justify-content: space-between; /* Espace équitablement : bloc gauche à gauche, photo au centre, bloc droite à droite */
+    align-items: center;            /* Aligne les éléments verticalement */
+    padding: 40px 50px;             /* Ajoute de la marge interne sur les côtés */
+}
+.colonne-gauche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+.colonne-droite{
+     display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-end; /* Aligne tout le contenu de cette colonne à droite */
+    text-align: right;
+}
+.colonne-centre img {
+    width: 300px;              
+    height: 450px;             
+    object-fit: cover;         
+    border-radius: 150px;      
+}
+.gros-titre {
+    font-size: 42px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+.reseaux a {
+    color: white; 
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.service a.active {
+    color: #FFEE63; 
+    font-weight: bold;
+}
+.galerie-container {
+    padding: 40px 5%;
+    text-align: center;
+    margin: auto;
+}
+.titre-page {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.grille-photos {
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    padding: 20px; 
+    
+}
+.photo-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; 
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.photo-card img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
