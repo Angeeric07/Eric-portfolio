@@ -56,7 +56,12 @@ main {
     width: 300px;              
     height: 450px;             
     object-fit: cover;         
-    border-radius: 150px;      
+    border-radius: 150px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+.colonne-centre img :hover{
+     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .gros-titre {
     font-size: 42px;
@@ -182,4 +187,12 @@ main {
 
 .btn:hover {
     background-color: #e0e0e0;
+}
+.follow{
+     background-color: #ffffff22;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
