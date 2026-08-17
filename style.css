@@ -196,3 +196,63 @@ main {
     font-weight: bold;
     margin-bottom: 8px;
 }
+/* ============================================================
+   📱 REGLES RESPONSIVE DESIGN (Mobiles & Tablettes)
+   ============================================================ */
+
+/* 1. Sécurité pour que les images ne dépassent jamais de l'écran */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2. Adaptation pour écrans de type Tablette et Mobile (max 768px) */
+@media (max-width: 768px) {
+
+  /* Alignement vertical du menu de navigation */
+  header, nav, .navbar {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 15px;
+    padding: 15px !important;
+  }
+
+  nav ul, .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  /* Ajustement des titres pour petits écrans */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  /* Réduction des marges internes pour éviter de gaspiller l'espace */
+  body, .container, main, section {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Passage de la Galerie et des Projets sur une seule colonne */
+  .gallery-grid, 
+  .projects-grid, 
+  .grid, 
+  .portfolio-container {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* Une seule colonne */
+    gap: 20px !important;
+  }
+
+  /* Ajustement des cartes de projets/photos pour qu'elles occupent 100% de la largeur */
+  .card, 
+  .project-card, 
+  .gallery-item {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
